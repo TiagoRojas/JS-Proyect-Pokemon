@@ -508,8 +508,8 @@ function animate() {
     }
 
     const pokemonDefeatedDiv = document.getElementById("pokemonDefeated")
-    let localStorageItem = localStorage.getItem("Pokemon Derrotados")
-    pokemonDefeatedDiv.innerText = "Pokemon derrotados: " + localStorageItem ?? 0
+    let localStorageItem = localStorage.getItem("Pokemon Derrotados") ?? 0
+    pokemonDefeatedDiv.innerText = "Pokemon derrotados: " + localStorageItem
 }
 preAnimate()
 
