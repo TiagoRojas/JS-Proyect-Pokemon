@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    font-family: "pokmon_firered__leafgreen_fRg";
+}
+
+#overlappingDiv{
+    background-color: black;
+    position: absolute;
+    width: 960px;
+    height: 640px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+
+#gamezone{
+    background-color: black;
+    width: 960px;
+    height: 640px;
+}
+
+#health1{
+    position: relative;
+    z-index: 1;
+    top: -532px;
+    left: -62px;
+    width: 194px;
+    height: 16px;
+    appearance: none;
+}
+#health2{
+    position: relative;
+    z-index: 1;
+    top: -265px;
+    left: -36px;
+    width: 194px;
+    height: 20px;
+    appearance: none;
+}
+#health1::-moz-progress-bar,#health2::-moz-progress-bar{
+    background: #71faaa
+}
+
+#healthBar1{
+    z-index: 2;
+    position: relative;
+    top: -525px;
+    left: 140px;
+}
+
+#healthBar2{
+    z-index: 2;
+    position: relative;
+    top: -255px;
+    left: 170px;
+}
+
+
+#hitMark0{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -180px;
+    left: 540px;
+}
+#hitMark1{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: -163px;
+    left: 538px;
+}
+#hitMark2{
+    width: 140px;
+    height: 50px;
+    position: relative;
+    top: -280px;
+    left: 765px;
+}
+#hitMark3{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -265px;
+    left: 763px;
+}
+
+#movement0{
+    position: relative;
+    top: -430px;
+    left: 50px;
+    font-size: 20px;
+    display: inline-block;
+    width: 160px;
+    padding: 0px;
+    text-align: center;
+}
+#movement1{
+    position: relative;
+    top: -430px;
+    left: 50px;
+    font-size: 20px;
+    display: inline-block;
+    width: 214px;
+    padding: 0px 140px;
+    text-align: center;
+}
+#movement2{
+    position: relative;
+    top: -370px;
+    left: -634px;
+    font-size: 30px;
+    display: inline-block;
+    width: 214px;
+    text-align: center;
+}
+#movement3{
+    position: relative;
+    top: -475px;
+    left: 230px;
+    font-size: 30px;
+    display: inline-block;
+    width: 214px;
+    padding: 0px 140px;
+    text-align: center;
+}
+
+.alertify-notifier{
+    display: inline-block;
+}
+.ajs-message{
+    margin-top: 10px;
+    border: 1px solid rgba(255, 0, 0, 1);
+    border-radius: 25px;
+    background-color: rgba(255, 42, 42, 0.418);
+    height: 30px;
+    padding: 0px 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
